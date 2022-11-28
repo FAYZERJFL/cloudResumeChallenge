@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
-    inputs:
 
 jobs:
   upload:
@@ -19,4 +17,5 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.S3BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.FAYZERPRODUCTIONACCESSKEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.FAYZERPRODUCTIONSECRETACCESSKEY }}
+          DISTRIBUTION_ID: 'E34846GBV9BPSW'
           
