@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: jakejarvis/s3-sync-action@master
-      - uses: liftric/kirby-cloudfront-invalidations@master
+      - uses: kersvers/s3-sync-with-cloudfront-invalidation@v1.0.0
         with:
           args: --follow-symlinks --delete --exclude '.git/*'
         env:
