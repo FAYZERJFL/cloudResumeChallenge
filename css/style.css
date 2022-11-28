@@ -11,25 +11,25 @@ body
 a:link
 {
 	text-decoration: none;
-	text-decoration-color: currentColor;
+	text-decoration-color: inherit;
 }
 
 a:visited
 {
 	text-decoration: none;
-	text-decoration-color: currentColor;
+	text-decoration-color: inherit;
 }
 
 a:hover
 {
 	text-decoration: none;
-	text-decoration-color: currentColor;
+	text-decoration-color: inherit;
 }
 
 a:active
 {
 	text-decoration: none;
-	text-decoration-color: currentColor;
+	text-decoration-color: inherit;
 }
 
 {
