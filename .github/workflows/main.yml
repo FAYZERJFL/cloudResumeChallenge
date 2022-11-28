@@ -4,25 +4,6 @@ on:
   push:
     branches:
     - master
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: false
 
 jobs:
   deploy:
@@ -33,6 +14,6 @@ jobs:
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
       env:
-        S3BUCKET: ${{ secrets.S3BUCKET }}
-        GITHUBS3UPDATERKEY: ${{ secrets.GITHUBS3UPDATERKEY }}
-        GITHUBS3UPDATERSECRETKEY: ${{ secrets.GITHUBS3UPDATERSECRETKEY }}
+        AWS_S3_BUCKET: ${{ secrets.S3BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.GITHUBS3UPDATERKEY }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.GITHUBS3UPDATERSECRETKEY }}
