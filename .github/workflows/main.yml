@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
+      - uses: liftric/kirby-cloudfront-invalidations@master
         with:
           args: --follow-symlinks --delete --exclude '.git/*'
         env:
