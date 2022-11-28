@@ -8,10 +8,29 @@ html
 }
 
 body
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link
+{
+	text-decoration: none;
+	text-decoration-color: currentColor;
+}
+
+a:visited
+{
+	text-decoration: none;
+	text-decoration-color: currentColor;
+}
+
+a:hover
+{
+	text-decoration: none;
+	text-decoration-color: currentColor;
+}
+
+a:active
+{
+	text-decoration: none;
+	text-decoration-color: currentColor;
+}
 
 {
 	-webkit-font-smoothing:antialiased;
