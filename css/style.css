@@ -68,6 +68,12 @@ h1
 	width:150px;
 }
 
+.resume-pic
+{
+	margin:auto;
+	position: relative;
+}
+
 .name-hero
 {
 	background:rgba(0,0,0,.001);
@@ -75,7 +81,7 @@ h1
 	height:290px;
 	left:0;
 	margin:auto;
-	position:absolute;
+	position:relative;
 	right:0;
 	top:0;
 	width:85%;
