@@ -39,6 +39,7 @@ h1
 	border-right:1px solid rgba(0,0,0,.05);
 	float:right;
 	height:100%;
+	mergin-top: 100px;
 	margin-left:-1px;
 	min-width:256px;
 	position:fixed;
