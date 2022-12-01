@@ -164,7 +164,7 @@ ul
 
 @media screen and (max-width: 48em) {
 	.left{
-		margin-bottom:70px;
+		padding-bottom:70px;
 	}
 
 	.left h1{
