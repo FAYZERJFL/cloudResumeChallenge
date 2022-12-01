@@ -59,7 +59,7 @@ h1
 {
 	background:rgba(0,0,0,.001);
 	bottom:0;
-	height:290px;
+	height:auto;
 	left:0;
 	margin:auto;
 	position:relative;
@@ -71,7 +71,7 @@ h1
 .resume-pic
 {
 	position: relative;
-	margin:auto;
+	margin:0 auto;
 }
 
 .me-img
@@ -163,16 +163,47 @@ ul
 }
 
 @media screen and (max-width: 48em) {
+	.left{
+		margin-bottom:70px;
+	}
+
+	.left h1{
+		margin-top:0;
+	}
+	
 	.right,.left
 	{
 		float:none;
     position:relative !important;
 		width:100%;
-    min-height:500px;
 	}
+
+	.name-hero{
+		top:0;
+		height:auto;
+	}
+
+	.name-text p{
+		margin: 0 auto;
+	}
+
+	.resume-pic{
+		margin:0 auto;
+	}
+
+	.inner{
+		padding:0 3em;
+	}
+
+	.inner section{
+		margin:0 auto;
+	}
+	
+
   .handmade {
   text-align:center !important;
   margin-top:0px !important;
+	}
 }
 
 @media screen and (max-width: 75em) {
@@ -193,7 +224,7 @@ ul
 }
 .handmade {
   text-align:right;
-  margin-top:100px;
+  margin-top:0;
 }
 .handmade em {
   font-family: 'Shadows Into Light', cursive;
