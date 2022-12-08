@@ -133,8 +133,8 @@ h1 {
 
 .pic-name {
 	text-align: center;
-	border-style: solid;
-	border-width:.1em;
+	/* border-style: solid;
+	border-width:.1em; */
 }
 
 .pic-name h1 {
