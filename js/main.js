@@ -8,3 +8,12 @@ var xhr = new XMLHttpRequest();
   });
 xhr.open("POST", "https://usigzt2y68.execute-api.us-east-1.amazonaws.com/default/fayzerVisitorCounter");
 xhr.send();
+
+
+const modal = document.querySelector('.modal');
+document.addEventListener('DOMContentLoaded',setTimeout(
+      function() {
+        modal.showModal();
+      },
+    5000)
+  )

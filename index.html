@@ -5,25 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://unpkg.com/open-props"/>
   <link rel='stylesheet' type='text/css' href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-  <script src="js/main.js"></script>
   <title>Robert Fay's Resume</title>
 </head>
 
+
 <body>
+
   <div class="wrapper clearfix">
+
+    <dialog class="modal" id="modal">
+      <h2>Thank you for visiting my web resume!</h2>
+      <p>If you would like to know more about what I will bring to your organization, please submit the information below.</p>
+      <form class="form" method="dialog">
+        <div class="inputs">
+          <div class="name-input">
+            <label>Your name: <input type="text"></label>
+          </div>
+          <div class="email-input">
+            <label>Your email: <input type="email"></label>
+          </div>
+        </div>
+        <button class="button submit-button" type="submit">submit</button>
+      </form>
+    </dialog>
+
+
     <div class="left">
       <div class="name-hero">
         <div class="name-text">
           <div class="resume-pic" style="text-align: center;">
-            <img src="resumePic.png">
+            <img src="resumePicSmall.png">
           </div>
-          <h1 style="font-size:35px">Robert <em>Fay</em></h1>
+          <h1>ROBERT&nbsp <em>FAY</em></h1>
           <p>9555 E Raintree Drive #1054 Scottsdale, AZ 85260</p>
           <p>fayzer@gmail.com</p>
           <p>(480) 619-7505</p>
-          <p><a href="resume.pdf" target="_blank">Download Resume</a></p>
+          <p><a href="resume/resume.pdf">Download Resume</a></p>
           <p><a href="https://www.linkedin.com/in/rob-fay-23876422/" target="_blank">LinkedIn</a></p>
           <br>
           <p id="viewCount"></p>
@@ -31,21 +52,23 @@
       </div>
     </div>
 
+
     <div class="right">
       <div class="inner">
+        
         <section>
-            <h1>Certifications</h1>
-            <ul><em>
-              <li><a href="ccpCertificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
+          <h1>Certifications</h1>
+            <ul>
+              <li>AWS Certified Cloud Practitioner</li>
               <li>AWS Certified Solutions Architect (pending exam)</li>
-            </em></ul>
+            </ul>
           <h1>Projects</h1>
             <ul>
               <li><a href="https://cloudresumechallenge.dev/" target="_blank"><em>The Cloud Resume Challenge</em></a></li>
-              <li>Required Skills:</li>
+              <li>Skills learned:</li>
               <li>- IAC</li>
               <li>- AWS SAM</li>
-              <li>- Github Actions & CI/CD workflows</li>
+              <li>- GitHub Actions & CI/CD workflows</li>
               <li>- Python</li>
               <li>- AWS API Gateway & POST API calls</li>
               <li>- API CORS & Response headers</li>
@@ -57,7 +80,6 @@
               <li>- VSCode with GitHub integration</li>
               <li>- Javascript</li>
               <li>- HTML & CSS</li>
-              <li style="font-size:85%">- <a href="https://github.com/FAYZERJFL/cloudResumeChallenge" target="_blank">Check out my code here</a></li>
             </ul>
             <h1>Employment History</h1>
               <p>12/2021-6/2022 <em>Salus Medical | Pharmaceutical Sales Rep</em></p>
@@ -116,6 +138,11 @@
         </section>
       </div>
     </div>
+
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
