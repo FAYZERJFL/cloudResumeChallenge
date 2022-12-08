@@ -2,15 +2,13 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
-html
-{
+html {
 	font-size:100%;
 }
 
 /* ================================== */
 
-body
-{
+body {
 	-webkit-font-smoothing:antialiased;
 	color:#333332;
 	font-family:Lora, serif;
@@ -20,98 +18,91 @@ body
 	text-rendering:optimizeLegibility;
 }
 
-.modal
-{
-	padding: 0 1.5em;
-	padding-bottom: 1.2em;
-	max-width: 50ch;
-	font-weight: 500;
-	font-size:1em;
-	border:0;
-	box-shadow: 0 0 1.5em rgba(0,0,0,.75);
 
-/* 	& > * {
-		margin: 0 0 0.5rem 0;
-	} */
-}
+/* ======================= MODAL ======================= */
 
-.modal h2{
-	line-height: 1;
-}
+		.modal {
+			padding: 0 1.5em;
+			padding-bottom: 1.2em;
+			max-width: 50ch;
+			font-weight: 500;
+			font-size:1em;
+			border:0;
+			box-shadow: 0 0 1.5em rgba(0,0,0,.75);
 
-.modal p
-{
-	font-size: .8em;
-	margin-bottom:30px;
-}
+			/* 	& > * {
+					margin: 0 0 0.5rem 0;
+				} */
+		}
 
-.modal::backdrop
-{
-	background:rgb(0 0 0 / .5)
-}
+		.modal h2 {
+			line-height: 1;
+		}
 
-.modal button:hover button:focus {
-		background: var(--cyan-9);
-}
+		.modal p {
+			font-size: .8em;
+			margin-bottom:30px;
+		}
 
-.inputs{
-	float:left;
-}
+		.modal::backdrop {
+			background:rgb(0 0 0 / .5)
+		}
 
-.form button
-{
-	margin-top:13px;
-}
+		.button {
+			border: 0;
+			cursor: pointer;
+			background: var(--gray-8);
+			color: var(--gray-2);
+			font-weight: 700;
+			font-size:1em;
+			padding: var(--size-2) var(--size-4);
+		}
 
-.name-input
-{
-	font-size:.8em;
-	margin-bottom:5px;
-}
+		.button:hover, .button:focus {
+			background: var(--cyan-9);
+		}
 
-.email-input
-{
-	font-size:.8em;
-}
+		.modal button:hover button:focus {
+				background: var(--cyan-9);
+		}
 
-.submit-button
-{
-	float:right;
-}
+		.inputs {
+			float:left;
+		}
 
-.skill-set li:hover
-{
-	background:#3498db;
-}
+		.form button {
+			margin-top:13px;
+		}
 
-h1
-{
+		.name-input {
+			font-size:.8em;
+			margin-bottom:5px;
+		}
+
+		.email-input {
+			font-size:.8em;
+		}
+
+		.submit-button {
+			float:right;
+		}
+		
+		.skill-set li:hover {
+			background:#3498db;
+		}
+
+/* =================================================================*/
+
+
+h1 {
 	color:rgba(0,0,0,.75);
 }
 
-.wrapper
-{
+.wrapper {
 	height:100%;
 }
 
-.button
-{
-  border: 0;
-  cursor: pointer;
-  background: var(--gray-8);
-  color: var(--gray-2);
-  font-weight: 700;
-	font-size:1em;
-  padding: var(--size-2) var(--size-4);
-}
-
-.button:hover, .button:focus
-{
-  background: var(--cyan-9);
-}
-
-.left
-{
+.left {
 	border-style:solid;
 	border-width:.1em;
 	background-color:rgba(0,0,0,.12);
@@ -124,16 +115,7 @@ h1
 	width:33.3%;
 }
 
-.right
-{
-	float:right;
-	height:100%;
-	position:relative;
-	width:66.6%;
-}
-
-.name-hero
-{
+.name-hero {
 	background:rgba(0,0,0,.001);
 	bottom:0;
 	height:auto;
@@ -145,52 +127,35 @@ h1
 	width:85%;
 }
 
-.name-hero img
-{
+.name-hero img {
 	max-width:100%;
 }
 
-.resume-pic
-{
-	position: relative;
-	margin:0 auto;
+.pic-name {
+	text-align: center;
+	border-style: solid;
+	border-width:.1em;
 }
 
-.picandname resume-pic,
-.picandname h1
-{
-	max-width:100%;
-}
-
-/* .me-img
-{
-	background-size:100%;
-  background-position:0px;
-	border-radius:100%;
-	height:150px;
-	margin:0 auto;
-	position:relative;
-	width:150px;
-} */
-
-.name-hero h1
-{
+.pic-name h1 {
 	color:rgb(255,255,255);
 	background:rgba(0,0,0,0.8);
 	font-family:Cinzel;
 	font-weight:500;
 	font-size:3.5em;
-	text-align:center;
+	margin:0;
+}
+
+.pic-name .name {
+	margin:0 auto;
 	max-width:100%;
 }
 
-.name-hero h1 em
-{
+.name-hero h1 em {
 	font-style:normal;
 }
 
-.name-hero p
-{
+.name-hero p {
 	color:rgb(0,0,0);
 	font-family:Cinzel;
 	font-size:.75em;
@@ -199,50 +164,53 @@ h1
 	text-align:center;
 }
 
-.name-hero .name-text
-{
+.name-hero .name-text {
 	margin:0 auto;
 	width:85%;
 }
 
-.inner
-{
+.contact-info {
+	margin:10px 0;
+}
+
+.right {
+	float:right;
+	height:100%;
+	position:relative;
+	width:66.6%;
+}
+
+.inner {
 	margin:0 auto;
 	max-width:975px;
 	padding:3em;
 }
 
-.inner h1
-{
+.inner h1 {
 	font-size:1.75em;
 }
 
-.inner p
-{
+.inner p {
 	color:rgba(0,0,0,.5);
 }
 
-.inner p em
-{
+.inner p em {
 	color:rgba(0,0,0,1);
 	font-style:normal;
 }
 
-.inner section
-{
+.inner section {
 	margin:100px auto;
 }
 
-ul
-{
+ul {
 	list-style-type:none;
 	margin-top:-10px;
 	max-width:570px;
 	padding:0;
 }
 
-.skill-set li
-{
+.skill-set li {
 	background:rgba(0,0,0,.75);
 	border-radius:5px;
 	color:#FFF;
@@ -257,33 +225,13 @@ ul
 	.left{
 		margin-bottom:70px;
 	}
-
-	.picandname resume-pic,
-.picandname h1
-{
-	max-width:100%;
-}
-
+	
 	.left h1{
 		margin-top:0;
 		font-size:2em;
 	}
-
-/* 	.me-img{
-		max-width:100%;
-	} */
-
-.form .inputs
-{
-float:none;
-}
-
-.form .submit-button
-{
-float:none;
-}
-	.right,.left
-	{
+	
+	.right,.left{
 		float:none;
     position:relative !important;
 		width:100%;
@@ -310,59 +258,54 @@ float:none;
 		margin:0 auto;
 	}
 	
-
-  .handmade {
+  .handmade{
   text-align:center !important;
   margin-top:0px !important;
 	}
 }
 
-@media screen and (max-width: 99em)
+@media screen and (max-width: 99em) {
+	.left h1{
+		margin-top:0;
+		font-size:2em;
+		max-width:100%;
+	}
 
-.left h1{
+	.left .resume-pic{
+		max-width:100%;
+	}
+}
+
+@media screen and (max-width: 75em) {
+	body{
+		font-size:16px;
+	}
+}
+
+.left h1 {
 	margin-top:0;
 	font-size:2em;
 	max-width:100%;
 }
 
-.left .resume-pic
-{
-	max-width:100%;
-}
-
-@media screen and (max-width: 75em)
-
-{
-	body{font-size:16px;}
-}
-
-.left h1
-{
-	margin-top:0;
-	font-size:2em;
-	max-width:100%;
-}
-
-.left .resume-pic
-{
+.left .resume-pic {
 	max-width:100%;
 }
 
 @media screen and (max-width: 60em) {
-    body
-{ font-size:14px;}
+	body{
+		font-size:14px;
+	}
 
-.left h1
-{
-	margin-top:0;
-	font-size:2em;
-	max-width:100%;
-}
+	.left h1{
+		margin-top:0;
+		font-size:2em;
+		max-width:100%;
+	}
 
-.left .resume-pic
-{
-	max-width:100%;
-}
+	.left .resume-pic{
+		max-width:100%;
+	}
 }
 
 .clearfix:after {
