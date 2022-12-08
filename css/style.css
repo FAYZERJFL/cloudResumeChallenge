@@ -272,7 +272,16 @@ ul
 /* 	.me-img{
 		max-width:100%;
 	} */
-	
+
+.form .inputs
+{
+float:none;
+}
+
+.form .submit-button
+{
+float:none;
+}
 	.right,.left
 	{
 		float:none;
