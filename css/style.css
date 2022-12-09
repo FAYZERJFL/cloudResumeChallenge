@@ -173,6 +173,12 @@ h1 {
 	margin:10px 0;
 }
 
+.links p {
+	margin-top:20px;
+	font-size:20px;
+	line-height:0.6em;
+}
+
 #viewCount {
 	margin-top:30px;
 }
@@ -226,7 +232,7 @@ ul {
 }
 
 @media screen and (max-width: 1460px) {
-	body{
+	body {
 		font-size:16px;
 	}
 	.left h1 {
@@ -251,7 +257,7 @@ ul {
 }
 
 @media screen and (max-width: 1300px) {
-	body{
+	body {
 		font-size:14px;
 	}
 	.contact-info {
@@ -263,7 +269,7 @@ ul {
 }
 
 @media screen and (max-width: 1120px) {
-	.pic-name h1{
+	.pic-name h1 {
 		font-size:1.9em;
 	}
 	.pic-name #name {
@@ -274,46 +280,52 @@ ul {
 	}
 }
 
+@media screen and (max-width: 960px) {
+	.links p {
+		margin-top:20px;
+		font-size:15px;
+		line-height:0.6em;
+	}
+}
+
 @media screen and (max-width: 768px) {
-	body{
+	body {
 		font-size:14px;
 	}
-	.left{
+	.left {
 		padding:50px 0 20px 0;
 		margin-bottom:40px;
 	}
-	.left h1{
+	.left h1 {
 		margin-top:0;
 	}
-	.pic-name #name{
+	.pic-name #name {
 		max-width:320px;
 		margin:5px auto 0 auto;
 	}
-	.right,.left{
+	.right,.left {
 		float:none;
     position:relative !important;
 		width:100%;
 	}
-	.name-hero{
+	.name-hero {
 		top:0;
 		height:auto;
 	}
-	.name-text p{
-		margin: 0;
-	}
-	.resume-pic{
+
+	.resume-pic {
 		margin:0;
 	}
 	.contact-info {
 		margin-top:1em;
 	}
-	.inner{
+	.inner {
 		padding:0 3em;
 	}
-	.inner section{
+	.inner section {
 		margin:0 auto;
 	}	
-  .handmade{
+  .handmade {
   text-align:center !important;
   margin-top:0px !important;
 	}
