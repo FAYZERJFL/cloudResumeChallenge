@@ -174,7 +174,7 @@ h1 {
 }
 
 #viewCount {
-	margin-top:75px;
+	margin-top:60px;
 }
 
 .right {
@@ -243,7 +243,7 @@ ul {
 		max-width:100%;
 	}
 	#viewCount {
-		margin:0;
+		margin-top:50px;
 	}
 }
 
@@ -251,7 +251,6 @@ ul {
 	body{
 		font-size:14px;
 	}
-	
 }
 
 @media screen and (max-width: 1120px) {
