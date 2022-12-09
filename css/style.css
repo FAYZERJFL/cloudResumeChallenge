@@ -174,7 +174,7 @@ h1 {
 }
 
 #viewCount {
-	margin-top:60px;
+	margin-top:30px;
 }
 
 .right {
@@ -237,10 +237,13 @@ ul {
 		font-size:2.6em;
 	}
 	.pic-name #name {
-		margin:20px 0 0 0;
+		margin:40px 0 0 0;
 	}
 	.left .resume-pic {
 		max-width:100%;
+	}
+	.contact-info {
+		margin-top:2em;
 	}
 	#viewCount {
 		margin-top:50px;
@@ -251,6 +254,12 @@ ul {
 	body{
 		font-size:14px;
 	}
+	.contact-info {
+		margin-top:3em;
+	}
+	#viewCount {
+		margin-top:30px;
+	}
 }
 
 @media screen and (max-width: 1120px) {
@@ -258,7 +267,10 @@ ul {
 		font-size:1.9em;
 	}
 	.pic-name #name {
-		margin:12px 0 0 0;
+		margin:40px 0 0 0;
+	}
+	.contact-info {
+		margin-top:3em;
 	}
 }
 
@@ -267,8 +279,8 @@ ul {
 		font-size:14px;
 	}
 	.left{
-		padding-top:50px;
-		margin-bottom:70px;
+		padding:50px 0 20px 0;
+		margin-bottom:40px;
 	}
 	.left h1{
 		margin-top:0;
@@ -291,6 +303,9 @@ ul {
 	}
 	.resume-pic{
 		margin:0;
+	}
+	.contact-info {
+		margin-top:1em;
 	}
 	.inner{
 		padding:0 3em;
