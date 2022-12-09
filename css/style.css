@@ -12,14 +12,16 @@ body {
 	-webkit-font-smoothing:antialiased;
 	color:#333332;
 	font-family:Lora, serif;
-	font-size:18px;
+	font-size:20px;
 	font-weight:400;
 	line-height:1.4;
 	text-rendering:optimizeLegibility;
 }
 
 
-/* ======================= MODAL ======================= */
+/* ======================= MODAL =======================
+========================================================
+=========================================================*/
 
 		.modal {
 			padding: 0 1.5em;
@@ -29,10 +31,6 @@ body {
 			font-size:1em;
 			border:0;
 			box-shadow: 0 0 1.5em rgba(0,0,0,.75);
-
-			/* 	& > * {
-					margin: 0 0 0.5rem 0;
-				} */
 		}
 
 		.modal h2 {
@@ -91,7 +89,9 @@ body {
 			background:#3498db;
 		}
 
-/* =================================================================*/
+/* =================================================================
+====================================================================
+====================================================================*/
 
 
 h1 {
@@ -147,7 +147,6 @@ h1 {
 
 .pic-name {
 	text-align: center;
-	max-width:320px;
 	margin:auto;
 }
 
@@ -155,7 +154,7 @@ h1 {
 	color:rgb(255,255,255);
 	font-family:Cinzel;
 	font-weight:500;
-	font-size:2em;
+	font-size:2.7em;
 	margin:0;
 }
 
@@ -164,13 +163,18 @@ h1 {
 }
 
 .pic-name #name {
-	margin-top:5px;
+	margin-top:40px;
+	margin-bottom:20px;
 	padding-top:5px;
 	background:rgba(0,0,0,0.8);
 }
 
 .contact-info {
 	margin:10px 0;
+}
+
+#viewCount {
+	margin-top:75px;
 }
 
 .right {
@@ -227,17 +231,35 @@ ul {
 	}
 	.left h1 {
 		margin-top:0;
-		font-size:2em;
 		max-width:100%;
+	}
+	.pic-name h1{
+		font-size:2.6em;
+	}
+	.pic-name #name {
+		margin:20px 0 0 0;
 	}
 	.left .resume-pic {
 		max-width:100%;
+	}
+	#viewCount {
+		margin:0;
 	}
 }
 
 @media screen and (max-width: 1300px) {
 	body{
 		font-size:14px;
+	}
+	
+}
+
+@media screen and (max-width: 1120px) {
+	.pic-name h1{
+		font-size:1.9em;
+	}
+	.pic-name #name {
+		margin:12px 0 0 0;
 	}
 }
 
@@ -251,7 +273,11 @@ ul {
 	}
 	.left h1{
 		margin-top:0;
-	}	
+	}
+	.pic-name #name{
+		max-width:320px;
+		margin:5px auto 0 auto;
+	}
 	.right,.left{
 		float:none;
     position:relative !important;
@@ -262,10 +288,10 @@ ul {
 		height:auto;
 	}
 	.name-text p{
-		margin: 0 auto;
+		margin: 0;
 	}
 	.resume-pic{
-		margin:0 auto;
+		margin:0;
 	}
 	.inner{
 		padding:0 3em;
@@ -278,8 +304,6 @@ ul {
   margin-top:0px !important;
 	}
 }
-
-
 
 
 
