@@ -13,5 +13,5 @@ xhr.send();
 window.onload = (function() {
   setTimeout(function() {
     $('#exampleModal').modal('show');
-  }, 5000);
+  }, 10000);
 });
