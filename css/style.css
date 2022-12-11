@@ -6,8 +6,6 @@ html {
 	font-size:100%;
 }
 
-/* ================================== */
-
 body {
 	-webkit-font-smoothing:antialiased;
 	color:#333332;
@@ -17,76 +15,6 @@ body {
 	text-rendering:optimizeLegibility;
 }
 
-
-/* ======================= MODAL =======================
-========================================================
-=========================================================*/
-
-		.modal {
-			padding: 0 1.5em;
-			padding-bottom: 1.2em;
-			max-width: 50ch;
-			font-weight: 500;
-			font-size:1em;
-			border:0;
-			box-shadow: 0 0 1.5em rgba(0,0,0,.75);
-		}
-
-			.modal h2 {
-				line-height: 1;
-			}
-
-				.modal p {
-					font-size: .8em;
-					margin-bottom:30px;
-				}
-
-		.modal::backdrop {
-			background:rgb(0 0 0 / .5)
-		}
-
-		.button {
-			border: 0;
-			cursor: pointer;
-			background: var(--gray-8);
-			color: var(--gray-2);
-			font-weight: 700;
-			font-size:1em;
-			padding: var(--size-2) var(--size-4);
-		}
-
-			.button:hover, .button:focus {
-				background: var(--cyan-9);
-			}
-
-			.modal button:hover button:focus {
-					background: var(--cyan-9);
-			}
-
-		.inputs {
-			float:left;
-		}
-
-			.name-input {
-				font-size:.8em;
-				margin-bottom:5px;
-			}
-
-			.email-input {
-				font-size:.8em;
-			}
-
-		.submit-button {
-			float:right;
-		}
-		
-
-
-/* =================================================================
-====================================================================
-====================================================================*/
-
-
 h1 {
 	color:rgba(0,0,0,.75);
 }
@@ -95,9 +23,42 @@ h1 {
 	height:100%;
 }
 
+
+/* ==================== MODAL ======================
+.button {
+	border: 0;
+	cursor: pointer;
+	background: var(--gray-8);
+	color: var(--gray-2);
+	font-weight: 700;
+	font-size:1em;
+	padding: var(--size-2) var(--size-4);
+} */
+
+.modal-body #modal-body-text {
+  margin-bottom: 30px;
+}
+
+.form-outline {
+	float: left;
+	max-width: 340px;
+	margin: 4px;
+}
+
+#submit-button {
+	float: right;
+}
+
+
+
+
+
+
+/* ***************** LEFT SIDE ***************** */
+
+
 .left {
-	border-style:solid;
-	border-width:.1em;
+	border-right:1em || solid || rgba(0,0,0,0.5);
 	background-color:rgba(0,0,0,.12);
 	float:right;
 	height:100%;
@@ -119,11 +80,9 @@ h1 {
 	top:130px;
 	width:85%;
 }
-
 .name-hero img {
 	max-width:100%;
 }
-
 .name-hero p {
 	color:rgb(0,0,0);
 	font-family:Cinzel;
@@ -132,7 +91,6 @@ h1 {
 	margin:0 8px 0 0;
 	text-align:center;
 }
-
 .name-hero .name-text {
 	margin:0 auto;
 	width:85%;
@@ -142,7 +100,6 @@ h1 {
 	text-align: center;
 	margin:auto;
 }
-
 .pic-name h1 {
 	color:rgb(255,255,255);
 	font-family:Cinzel;
@@ -150,11 +107,9 @@ h1 {
 	font-size:2.9em;
 	margin:0;
 }
-
 .pic-name h1 em {
 	font-style:normal;
 }
-
 .pic-name #name {
 	margin-top:40px;
 	margin-bottom:20px;
@@ -177,9 +132,7 @@ h1 {
 }
 
 
-/* =================================================================
-====================================================================
-====================================================================*/
+/* ***************** RIGHT SIDE ***************** */
 
 
 .right {
@@ -189,97 +142,84 @@ h1 {
 	width:66.6%;
 }
 
-	.inner {
-		margin:0 auto;
-		max-width:975px;
-		padding:3em;
-	}
+.inner {
+	margin:0 auto;
+	max-width:975px;
+	padding:3em;
+}
+.inner section {
+	margin:40px auto;
+}
+.inner h1 {
+	font-family: Cinzel;
+	font-size:2em;
+	font-weight: 500;
+	margin-left:-15px;
+}
+.inner h2 {
+	font-family:Cinzel;
+	font-size:1.2em;
+	font-weight: 500;
+}
+.inner h3 {
+	margin-bottom:-10px;
+	font-weight:500;
+	font-size:1.2em;
+	text-decoration: underline;
+}
 
-		.inner section {
-			margin:40px auto;
-		}
-
-			.inner h1 {
-				font-family: Cinzel;
-				font-size:2em;
-				font-weight: 500;
-				margin-left:-15px;
-			}
-
-			.skills-list {
-				margin-left:25px;
-			}
+.skills-list {
+	margin-left:25px;
+}
 
 .projects {
 	margin-top:60px;
 }
-
-	.projects ul {
-		list-style-type:none;
-		font-size:.8em;
-		margin-top:10px;
-		max-width:570px;
-		padding:0;
-	}
-
-		.inner h2 {
-			font-family:Cinzel;
-			font-size:1.2em;
-			font-style:normal;
-		}
-
-			.inner h3 {
-				margin-bottom:-10px;
-				font-weight:500;
-				font-size:1.2em;
-				text-decoration: underline;
-			}
+.projects ul {
+	list-style-type:none;
+	font-size:.8em;
+	margin-top:10px;
+	max-width:570px;
+	padding:0;
+}
 
 .employment {
 	margin-top:60px;
 }
+.employment h1 {
+	margin-bottom:20px;
+}
+.job-info {
+	font-family:Cinzel;
+	font-size: 1.2em;
+	font-weight:500;
+	text-decoration:underline;
+}
+.employment p {
+	color:rgba(0,0,0,1);
+	margin-left:15px;
+	
+	font-size:0.7em;
+	font-weight: 200;
+}
 
-	.employment h1 {
-		margin-bottom:20px;
-	}
-
-		.job-info {
-			font-family:Cinzel;
-			font-size: 1.2em;
-			font-weight:500;
-			text-decoration:underline;
-		}
-
-			.employment p {
-				color:rgba(0,0,0,1);
-				margin-left:15px;
-				font-family:Lora;
-				font-size:0.7em;
-				font-weight: 200;
-			}
-
-.technical-skills {}
-
-	.skill-set li {
-		background:rgba(0,0,0,.75);
-		border-radius:5px;
-		color:#FFF;
-		display:inline-block;
-		list-style:none;
-		margin:15px 15px 0 0;
-		padding:10px;
-		text-align:justify;
-	}
-
-		.skill-set li:hover {
-			background:#3498db;
-		}
+.skill-set li {
+	background:rgba(0,0,0,.75);
+	border-radius:5px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px;
+	text-align:justify;
+}
+.skill-set li:hover {
+	background:#3498db;
+}
 
 
 
-/* =================================================================
-====================================================================
-====================================================================*/
+/* ========================== RESPONSIVE SETTINGS ========================== */
 	
 
 

@@ -10,10 +10,8 @@ xhr.open("POST", "https://usigzt2y68.execute-api.us-east-1.amazonaws.com/default
 xhr.send();
 
 
-const modal = document.querySelector('.modal');
-document.addEventListener('DOMContentLoaded',setTimeout(
-      function() {
-        modal.showModal();
-      },
-    5000)
-  )
+window.onload = (function() {
+  setTimeout(function() {
+    $('#exampleModal').modal('show');
+  }, 5000);
+});
