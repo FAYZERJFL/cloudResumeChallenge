@@ -1,4 +1,4 @@
-var xhr = new XMLHttpRequest();
+/* var xhr = new XMLHttpRequest();
   xhr.withCredentials = false;
   xhr.addEventListener("readystatechange", function() {
     if(this.readyState === 4) {
@@ -11,4 +11,4 @@ var xhr = new XMLHttpRequest();
     }
   });
 xhr.open("POST", "https://usigzt2y68.execute-api.us-east-1.amazonaws.com/default/fayzerVisitorCounter");
-xhr.send();
+xhr.send(); */
