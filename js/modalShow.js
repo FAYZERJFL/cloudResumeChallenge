@@ -1,5 +1,5 @@
 window.onload = (function() {
   setTimeout(function() {
     $('#modal').modal('show');
-  }, 200);
+  }, 10000);
 });
