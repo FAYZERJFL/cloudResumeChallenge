@@ -14,13 +14,20 @@ infoSubmit.addEventListener('click', function(e)
     var myHeaders = new Headers();
     
     const formdata = {'name':visitorName, 'email':visitorEmail};
+    const dateTime = new Date();
+
+    console.log(dateTime);
 
     console.log(formdata);
 
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: JSON.stringify(formdata),
+      body: JSON.stringify({
+        name:visitorName,
+        email:visitorEmail,
+        time:dateTime,
+      }),
       redirect: 'follow',
     }
 
