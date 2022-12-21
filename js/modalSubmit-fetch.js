@@ -18,9 +18,11 @@ infoSubmit.addEventListener('click', function()
       redirect: 'follow',
     };
     
+    /*
     console.log(dateTime);
     console.log(formdata);
     console.log(requestOptions.body);
+    */
 
     var request = new Request("https://7i3xd8khgh.execute-api.us-east-1.amazonaws.com/default/fayzerVisitorInfo", requestOptions);
 
