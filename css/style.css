@@ -37,9 +37,14 @@ h1 {
 	float: right;
 }
 
+.modal-body h5 {
+	font-size: .8em;
+}
+
 .modal-body h6 {
-	font-size: .6em;
+	font-size: .5em;
 	font-style: italic;
+	max-width: 80%;
 }
 
 /* ************************************************ */
