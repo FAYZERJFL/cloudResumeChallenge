@@ -7,7 +7,7 @@ var xhr = new XMLHttpRequest();
       var output = document.getElementById('viewCount').innerHTML;
       var result = output.replace(/"/g, '');
         document.getElementById('viewCount').innerHTML = result;
-        console.log(result);
+        /*console.log(result);*/
     }
   });
 xhr.open("POST", "https://293gl3o0bk.execute-api.us-east-1.amazonaws.com/default/fayzerVisitorCounter");
