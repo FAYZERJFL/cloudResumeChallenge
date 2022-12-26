@@ -1,12 +1,10 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-html {
+*, *:before, *:after{
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html{
 	font-size:100%;
 }
-
-body {
+body{
 	-webkit-font-smoothing:antialiased;
 	color:#333332;
 	font-family:Lora, serif;
@@ -14,56 +12,38 @@ body {
 	line-height:1.4;
 	text-rendering:optimizeLegibility;
 }
-
-h1 {
+h1{
 	color:rgba(0,0,0,.75);
 }
-
-
-
 /* ******************** MODAL ********************* */
-
-.modal-body #modal-body-text {
+.modal-body #modal-body-text{
   margin-bottom: 30px;
 }
-
-.form-outline {
+.form-outline{
 	float: left;
 	max-width: 340px;
 	margin: 4px;
 }
-
-#submit-button {
+#submit-button{
 	float: right;
 }
-
-.modal-body h5 {
+.modal-body h5{
 	font-size: .8em;
 }
-
-.modal-body h6 {
+.modal-body h6{
 	font-size: .5em;
 	font-style: italic;
 	max-width: 80%;
 }
-
-.disclaimer {
+.disclaimer{
 	margin-top:.75em;
 }
-
 /* ************************************************ */
-
-
-
-
-.wrapper {
+.wrapper{
 	height:100%;
 }
-
 /* ***************** LEFT SIDE ***************** */
-
-
-.left {
+.left{
 	border-right:.07em solid rgba(0,0,0,0.5);
 	background-color:rgba(0,0,0,.2);
 	float:right;
@@ -74,8 +54,7 @@ h1 {
 	position:fixed;
 	width:33.3%;
 }
-
-.name-hero {
+.name-hero{
 	background:rgba(0,0,0,.001);
 	bottom:0;
 	height:auto;
@@ -86,11 +65,11 @@ h1 {
 	top:130px;
 	width:85%;
 }
-.name-hero img {
+.name-hero img{
 	max-width:100%;
 	border: .07em solid rgba(0,0,0,0.5);
 }
-.name-hero p {
+.name-hero p{
 	color:rgb(0,0,0);
 	font-family:Cinzel;
 	font-size:.75em;
@@ -98,120 +77,106 @@ h1 {
 	margin:0 8px 0 0;
 	text-align:center;
 }
-.name-hero .name-text {
+.name-hero .name-text{
 	margin:0 auto;
 	width:85%;
 }
-
-.pic-name {
+.pic-name{
 	text-align: center;
 	margin:auto;
 }
-.pic-name h1 {
+.pic-name h1{
 	color:rgb(255,255,255);
 	font-family:Cinzel;
 	font-weight:400;
 	font-size:2.9em;
 	margin:0;
 }
-.pic-name h1 em {
+.pic-name h1 em{
 	font-style:normal;
 }
-.pic-name #name {
+.pic-name #name{
 	margin-top:40px;
 	margin-bottom:20px;
 	padding-top:5px;
 	background:rgba(0,0,0,0.8);
 }
-
-.contact-info {
+.contact-info{
 	margin:10px 0;
 }
-
-.links p {
+.links p{
 	margin-top:20px;
 	font-size:20px;
 	line-height:0.6em;
 }
-
-#viewCount {
+#viewCount{
 	margin-top:30px;
 	font-size: 1em;
 }
-
-
 /* ***************** RIGHT SIDE ***************** */
-
-
-.right {
+.right{
 	float:right;
 	height:100%;
 	position:relative;
 	width:66.6%;
 }
-
-.inner {
+.inner{
 	margin:0 auto;
 	max-width:975px;
 	padding:3em;
 }
-.inner section {
+.inner section{
 	margin:40px auto;
 }
-.inner h1 {
+.inner h1{
 	font-family: Cinzel;
 	font-size:2em;
 	font-weight: 500;
 	margin-left:-15px;
 }
-.inner h2 {
+.inner h2{
 	font-family:Cinzel;
 	font-size:1.2em;
 	font-weight: 500;
 }
-.inner h3 {
+.inner h3{
 	margin-bottom:-10px;
 	font-weight:500;
 	font-size:1.2em;
 	text-decoration: underline;
 }
-
-.skills-list {
+.skills-list{
 	margin-left:25px;
 }
-
-.projects {
+.projects{
 	margin-top:60px;
 }
-.projects ul {
+.projects ul{
 	list-style-type:none;
 	font-size:.8em;
 	margin-top:10px;
 	max-width:570px;
 	padding:0;
 }
-
-.employment {
+.employment{
 	margin-top:60px;
 }
-.employment h1 {
+.employment h1{
 	margin-bottom:20px;
 }
-.job-info {
+.job-info{
 	font-family:Cinzel;
 	font-size: 1.2em;
 	font-weight:500;
 	text-decoration:underline;
 }
-.employment p {
+.employment p{
 	color:rgba(0,0,0,1);
 	margin-left:15px;
-	
 	font-size:0.7em;
 	font-weight: 200;
 }
-
-.skill-set li {
+.skill-set li{
 	background:rgba(0,0,0,.75);
 	border-radius:5px;
 	color:#FFF;
@@ -221,130 +186,116 @@ h1 {
 	padding:10px;
 	text-align:justify;
 }
-.skill-set li:hover {
+.skill-set li:hover{
 	background:#3498db;
 }
-
-
-
 /* ========================== RESPONSIVE SETTINGS ========================== */
-	
-
-
-@media screen and (max-width: 1460px) {
-	body {
+@media screen and (max-width: 1460px){
+	body{
 		font-size:16px;
 	}
-	.left h1 {
+	.left h1{
 		margin-top:0;
 		max-width:100%;
 	}
 	.pic-name h1{
 		font-size:2.6em;
 	}
-	.pic-name #name {
+	.pic-name #name{
 		margin:40px 0 0 0;
 	}
-	.left .resume-pic {
+	.left .resume-pic{
 		max-width:100%;
 	}
-	.contact-info {
+	.contact-info{
 		margin-top:2em;
 	}
-	#viewCount {
+	#viewCount{
 		margin-top:50px;
 	}
 }
-
-@media screen and (max-width: 1300px) {
-	body {
+@media screen and (max-width: 1300px){
+	body{
 		font-size:14px;
 	}
-	.contact-info {
+	.contact-info{
 		margin-top:3em;
 	}
-	#viewCount {
+	#viewCount{
 		margin-top:30px;
 	}
 }
-
-@media screen and (max-width: 1120px) {
-	.pic-name h1 {
+@media screen and (max-width: 1120px){
+	.pic-name h1{
 		font-size:1.9em;
 	}
-	.pic-name #name {
+	.pic-name #name{
 		margin:40px 0 0 0;
 	}
-	.contact-info {
+	.contact-info{
 		margin-top:3em;
 	}
 }
-
-@media screen and (max-width: 960px) {
-	.links p {
+@media screen and (max-width: 960px){
+	.links p{
 		margin-top:20px;
 		font-size:15px;
 		line-height:0.6em;
 	}
 }
-
-@media screen and (max-width: 768px) {
-	body {
+@media screen and (max-width: 768px){
+	body{
 		font-size:14px;
 	}
-	.left {
+	.left{
 		padding:50px 0 20px 0;
 		margin-bottom:40px;
 	}
-	.left h1 {
+	.left h1{
 		margin-top:0;
 	}
-	.pic-name #name {
+	.pic-name #name{
 		max-width:320px;
 		margin:5px auto 0 auto;
 	}
-	.right,.left {
+	.right,.left{
 		float:none;
     position:relative !important;
 		width:100%;
 	}
-	.name-hero {
+	.name-hero{
 		top:0;
 		height:auto;
 	}
-
-	.resume-pic {
+	.resume-pic{
 		margin:0;
 	}
-	.contact-info {
+	.contact-info{
 		margin-top:1em;
 	}
-	.inner {
+	.inner{
 		padding:0 3em;
 	}
-	.inner section {
+	.inner section{
 		margin:0 auto;
 	}	
-  .handmade {
+  .handmade{
   text-align:center !important;
   margin-top:0px !important;
 	}
 }
-
-
-
-.clearfix:after {
+.clearfix:after{
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
    display: block;
    height: 0;
    clear: both;
 }
-.handmade {
+.handmade{
   text-align:right;
   margin-top:0;
 }
-.handmade em {
+.handmade em{
   font-family: 'Shadows Into Light', cursive;
   font-size: 1.25em;
   margin-left:5px;
