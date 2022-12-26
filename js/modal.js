@@ -1,7 +1,7 @@
 window.onload = (function() {
   setTimeout(function() {
     $('#modal').modal('show');
-  }, 200);
+  }, 8000);
 
   const infoSubmit = document.getElementById("submit-button");
   const apiSend = function() {
