@@ -16,16 +16,15 @@ h1{
 	color:rgba(0,0,0,.75);
 }
 /* ******************** MODAL ********************* */
-.modal-body #modal-body-text{
-  margin-bottom: 30px;
+.modal-header{
+	font-family: Cinzel;
+	background-color: #333333;
+	color: #dddddd;
 }
 .form-outline{
 	float: left;
 	max-width: 340px;
 	margin: 4px;
-}
-#submit-button{
-	float: right;
 }
 .modal-body h5{
 	font-size: .8em;
@@ -35,7 +34,10 @@ h1{
 	font-style: italic;
 	max-width: 80%;
 }
-/* ************************************************ */
+#submit-button{
+	float: right;
+}
+/* ********************* MAIN *************************** */
 .wrapper{
 	height:100%;
 }
