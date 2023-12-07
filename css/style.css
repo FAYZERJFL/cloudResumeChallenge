@@ -169,20 +169,6 @@ h1{
 	font-weight:500;
 	text-decoration:underline;
 }
-.cts{
-	border: .05em solid #111111;
-	border-radius: 10px;
-	padding: 15px 15px 10px 20px;
-	margin-left:-10px;
-	margin-bottom: 10px;
-}
-.cts-info{
-	font-size: 1.6em;
-}
-.cts-descr{
-	font-weight: bold;
-	font-size: 1.1em;
-}
 .employment p{
 	color:rgba(0,0,0,1);
 	margin-left:15px;
